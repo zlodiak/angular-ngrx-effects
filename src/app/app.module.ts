@@ -5,6 +5,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 import { environment } from 'src/environments/environment';
 import { AppComponent } from './app.component';
+import { userDataReducer } from './store/reducers/userdata.reducer';
 import { userNameReducer } from './store/reducers/username.reducer';
 
 @NgModule({
@@ -15,6 +16,7 @@ import { userNameReducer } from './store/reducers/username.reducer';
     BrowserModule,
     StoreModule.forRoot({ 
       userName: userNameReducer,
+      userData: userDataReducer,
     }),
     !environment.production ? StoreDevtoolsModule.instrument() : [],
   ],

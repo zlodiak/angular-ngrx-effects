@@ -1,5 +1,15 @@
 <input type="text" #userName>
-<button (click)="addUser(userName.value)">add</button>
+<br>
 
+<input type="number" #age>
+<br>
+
+<select #gender>
+  <option selected value="female">female</option>
+  <option value="male">male</option>
+</select>
+<br>
+
+<button (click)="addUser(userName.value, age.value, gender.value)">add</button>
 <hr>
 
