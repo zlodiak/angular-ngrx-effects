@@ -13,3 +13,14 @@
 <button (click)="addUser(userName.value, age.value, gender.value)">add</button>
 <hr>
 
+userData: 
+<pre>{{ userData$ | async | json }}</pre>
+
+userName: {{ userName$ | async }}
+<br>
+
+age: {{ (userData$ | async).age }}
+<br>
+
+gender: {{ userDataGender$ | async }}
+<br>
