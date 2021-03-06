@@ -1,0 +1,16 @@
+{
+    "properties": [
+        {
+            "id": 1,
+            "title": "angry"
+        },
+        {
+            "id": 2,
+            "title": "kind"
+        },
+        {
+            "id": 3,
+            "title": "funny"
+        }        
+    ]
+}

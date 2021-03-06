@@ -1,7 +1,9 @@
 import { createAction, props } from '@ngrx/store';
 import { IUserData } from '../state/interfaces';
 
+export const addUserDataActionType = '[userData] Add UserData';
+
 export const addUserDataAction = createAction(
-  '[userData] Add UserData',
+  addUserDataActionType,
   props<{ userData: IUserData }>()
 );
